@@ -235,7 +235,9 @@ a {
 
 .stitle {
   font-size: 34px;
+  
   font-weight: 800;
+  
   color: #111827;
   letter-spacing: -0.02em;
   margin-bottom: 12px;
@@ -255,10 +257,13 @@ a {
 .crd {
   float: left;
   width: 23%;
+  
   margin-right: 2.6%;
+  
   background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 12px;
+  
   padding: 32px 24px;
   text-align: center;
 }
