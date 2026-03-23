@@ -103,7 +103,8 @@ a {
 }
 
 .logo-link {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .logo-img {
@@ -131,8 +132,8 @@ a {
 }
 
 .topbar-inner .gbtn {
-  float: right;
-  margin-top: 14px;
+  display: inline-block;
+  vertical-align: middle;
   line-height: normal;
 }
 
@@ -150,15 +151,6 @@ a {
   position: relative;
 }
 
-.hero:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(10, 18, 30, 0.50);
-}
 
 .hbox {
   position: relative;
@@ -195,7 +187,6 @@ a {
   line-height: 1.2;
   color: #ffffff;
   margin-bottom: 20px;
-  letter-spacing: -0.02em;
 }
 
 .green-txt {
@@ -238,7 +229,6 @@ a {
   font-weight: 800;
   
   color: #111827;
-  letter-spacing: -0.02em;
   margin-bottom: 12px;
 }
 
@@ -255,9 +245,7 @@ a {
 
 .crd {
   float: left;
-  width: 23%;
-  
-  margin-right: 2.6%;
+  width: 25%;
   
   background: #ffffff;
   border: 1px solid #e5e7eb;
@@ -265,10 +253,6 @@ a {
   
   padding: 32px 24px;
   text-align: center;
-}
-
-.crd:last-of-type {
-  margin-right: 0;
 }
 
 .crd:hover {
@@ -330,7 +314,6 @@ a {
   color: #2a7a4b;
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.08em;
   margin-bottom: 14px;
 }
 
@@ -338,7 +321,6 @@ a {
   font-size: 34px;
   font-weight: 800;
   color: #111827;
-  letter-spacing: -0.02em;
   line-height: 1.25;
   margin-bottom: 16px;
 }
@@ -386,7 +368,6 @@ a {
   font-size: 36px;
   font-weight: 800;
   color: #111827;
-  letter-spacing: -0.02em;
   margin-bottom: 14px;
 }
 
@@ -474,42 +455,13 @@ a {
 
 /* RESPONSIVE */
 
-@media (max-width: 1120px) {
+@media (max-width: 700px) {
   .wrap {
     width: 100%;
   }
   .topbar-inner {
     width: 100%;
   }
-}
-
-@media (max-width: 900px) {
-  .crd {
-    width: 46%;
-    margin-bottom: 20px;
-  }
-  .crd-right {
-    margin-right: 0;
-  }
-
-  .sol-left {
-    float: none;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  .sol-right {
-    float: none;
-    width: 100%;
-  }
-  .know-img {
-    max-width: 340px;
-    margin: 0 auto;
-    display: block;
-  }
-}
-
-@media (max-width: 700px) {
   .mid-nav {
     display: none;
   }
@@ -528,8 +480,25 @@ a {
   .crd {
     float: none;
     width: 100%;
-    margin-right: 0;
     margin-bottom: 20px;
+  }
+  .crd-right {
+    margin-right: 0;
+  }
+  .sol-left {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .sol-right {
+    float: none;
+    width: 100%;
+  }
+  .know-img {
+    max-width: 340px;
+    margin: 0 auto;
+    display: block;
   }
   .ft-left {
     float: none;
