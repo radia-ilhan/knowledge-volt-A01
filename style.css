@@ -6,33 +6,45 @@
 body {
   font-family: 'Inter', sans-serif;
   color: #111827;
+
   background: #ffffff;
   line-height: 1.6;
 }
 
 a {
   text-decoration: none;
+
   color: inherit;
 }
 
 
-/* NAVBAR */
+/*abar navbar*/
 
 .topbar {
-  position: sticky;
+  position: fixed;
+
   top: 0;
-  z-index: 999;
+
+  left: 0;
+
+  width: 100%;
   background: #ffffff;
   border-bottom: 1px solid #e5e7eb;
   box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
+body {
+  padding-top: 68px; 
+}
 
 .topbar-inner {
   width: 1100px;
+
   margin: 0 auto;
   padding: 0 30px;
   height: 68px;
-  display: flex;
+
+  overflow: hidden;
+
   align-items: center;
   justify-content: space-between;
 }
@@ -40,24 +52,33 @@ a {
 .logo-link {
   display: inline-block;
   vertical-align: middle;
+  float: left;
+
+  line-height: 68px;
 }
 
 .logo-img {
   height: 44px;
   width: auto;
+
   vertical-align: middle;
 }
 
 .mid-nav {
   text-align: center;
-  flex: 1;
+
+  overflow: hidden;
+
+  line-height: 68px;
 }
 
 .nlink {
+
   font-size: 14px;
   font-weight: 500;
   color: #374151;
   margin: 0 18px;
+
   padding-bottom: 2px;
   border-bottom: 2px solid transparent;
 }
@@ -69,14 +90,21 @@ a {
 
 .nav-btn {
   display: inline-block;
+
   vertical-align: middle;
   padding: 12px 24px;
   border-radius: 8px;
   font-family: 'Inter', sans-serif;
+
   font-size: 15px;
+  float: right;
+
+  margin-top: 14px;
   font-weight: 600;
   cursor: pointer;
+
   border: 2px solid #2a7a4b;
+
   background-color: #2a7a4b;
   color: #ffffff;
   text-decoration: none;
@@ -88,20 +116,24 @@ a {
 }
 
 
-/* HERO */
+/*bg te hero*/
 
 .hero {
   min-height: 580px;
   text-align: center;
   background-image: url('hero-bg.png');
+
   background-size: cover;
   background-position: center;
+
   background-color: #0f1b2d;
+
   padding: 100px 20px;
 }
 
 .hbox {
   width: 780px;
+
   margin: 0 auto;
   padding: 20px;
 }
@@ -113,25 +145,32 @@ a {
   border-radius: 50px;
   color: #ffffff;
   font-size: 13px;
+
   font-weight: 500;
   padding: 6px 16px;
+
   margin-bottom: 24px;
 }
 
 .bdot {
   display: inline-block;
   width: 8px;
+
   height: 8px;
   background: #4caf6e;
+
   border-radius: 50%;
   margin-right: 7px;
   vertical-align: middle;
 }
 
 .htitle {
+
+
   font-size: 48px;
   font-weight: 900;
   line-height: 1.2;
+
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -150,14 +189,19 @@ a {
 .hero-btn-green {
   display: inline-block;
   margin: 6px 8px;
+
   padding: 12px 24px;
   border-radius: 8px;
+
   font-size: 15px;
   font-weight: 600;
+
   cursor: pointer;
   background-color: #2a7a4b;
+
   color: #ffffff;
   border: 2px solid #2a7a4b;
+
   text-decoration: none;
 }
 
@@ -168,13 +212,16 @@ a {
 
 .hero-btn-outline {
   display: inline-block;
+
   margin: 6px 8px;
   padding: 12px 24px;
   border-radius: 8px;
   font-size: 15px;
   font-weight: 600;
+
   cursor: pointer;
   background-color: transparent;
+
   color: #ffffff;
   border: 2px solid rgba(255,255,255,0.5);
   text-decoration: none;
@@ -187,12 +234,13 @@ a {
 
 .bicon {
   width: 18px;
+
   height: 18px;
   vertical-align: middle;
 }
 
 
-/* NOTES SECTION */
+/*ekhane notes*/
 
 .prob-section {
   background: #ffffff;
@@ -214,6 +262,7 @@ a {
   font-size: 34px;
   font-weight: 800;
   color: #111827;
+
   margin-bottom: 12px;
 }
 
@@ -230,7 +279,9 @@ a {
   float: left;
   width: 25%;
   background: #ffffff;
+
   border: 1px solid #e5e7eb;
+
   border-radius: 12px;
   padding: 32px 24px;
   text-align: center;
@@ -245,12 +296,54 @@ a {
   width: 64px;
   height: 64px;
   margin: 0 auto 22px;
+
   background-color: #ef5350;
+
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
+
+  line-height: 64px;
 }
+
+.btn.gbtn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+
+  font-weight: 600;
+  background-color: #2a7a4b;
+
+  color: #ffffff;
+  border: 2px solid #2a7a4b;
+  cursor: pointer;
+}
+.btn.gbtn:hover { 
+  background-color: #1f5c38; 
+  border-color: #1f5c38; }
+
+  .btn.gbtn.bbtn { margin: 6px 8px; }
+
+.btn.outbtn {
+  display: inline-block;
+  margin: 6px 8px;
+
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 15px;
+
+  font-weight: 600;
+  background-color: transparent;
+  color: #ffffff;
+
+  border: 2px solid rgba(255,255,255,0.5);
+
+  cursor: pointer;
+}
+.btn.outbtn:hover { 
+
+  background-color: rgba(255,255,255,0.1); 
+  border-color: #ffffff; }
 
 .cicon {
   width: 30px;
@@ -261,6 +354,7 @@ a {
 .ctitle {
   font-size: 15px;
   font-weight: 700;
+
   color: #111827;
   margin-bottom: 8px;
 }
@@ -275,8 +369,27 @@ a {
   clear: both;
 }
 
+.stitle { 
+  font-size: 24px;
+ }
 
-/* SECOND BRAIN SECTION */
+.sec-top { 
+  text-align: center; 
+  margin-bottom: 55px; 
+}
+
+.stitle { 
+  font-size: 34px; 
+  font-weight: 800; 
+  color: #111827; 
+  margin-bottom: 12px; 
+}
+
+.ssub { 
+  font-size: 15px; 
+  color: #6b7280; }
+
+/*scnd brain*/
 
 .sol-section {
   background: #ffffff;
@@ -309,6 +422,7 @@ a {
 .green-tag {
   display: inline-block;
   color: #2a7a4b;
+
   font-size: 12px;
   font-weight: 700;
   margin-bottom: 14px;
@@ -316,16 +430,20 @@ a {
 
 .brain-h {
   font-size: 34px;
+
   font-weight: 800;
   color: #111827;
   line-height: 1.25;
+
   margin-bottom: 16px;
 }
 
 .brain-p {
   font-size: 15px;
+
   color: #6b7280;
   line-height: 1.8;
+
   margin-bottom: 24px;
 }
 
@@ -343,22 +461,25 @@ a {
 .chk-img {
   width: 20px;
   height: 20px;
+
   vertical-align: middle;
   margin-right: 10px;
 }
 
 
-/* EARLY ACCESS */
+/*early access*/
 
 .cta-sec {
   background: #f5f5f5;
   padding: 90px 20px;
+
   text-align: center;
 }
 
 .cta-h {
   font-size: 36px;
   font-weight: 800;
+
   color: #111827;
   margin-bottom: 14px;
 }
@@ -367,6 +488,7 @@ a {
   font-size: 15px;
   color: #6b7280;
   line-height: 1.7;
+
   margin-bottom: 28px;
 }
 
@@ -374,9 +496,11 @@ a {
   display: inline-block;
   padding: 12px 24px;
   border-radius: 8px;
+
   font-size: 15px;
   font-weight: 600;
   background-color: #2a7a4b;
+
   color: #ffffff;
   border: 2px solid #2a7a4b;
   text-decoration: none;
@@ -395,7 +519,7 @@ a {
 }
 
 
-/* FOOTER */
+/*nicher*/
 
 .ft {
   background: #0f1b2d;
@@ -430,6 +554,7 @@ a {
   font-size: 12px;
   color: rgba(255,255,255,0.5);
   margin-bottom: 10px;
+
   font-weight: 500;
 }
 
@@ -437,11 +562,14 @@ a {
   display: inline-block;
   width: 36px;
   height: 36px;
+
   border-radius: 8px;
   background: rgba(255,255,255,0.1);
   border: 1px solid rgba(255,255,255,0.15);
+
   text-align: center;
   line-height: 34px;
+
   font-size: 13px;
   color: rgba(255,255,255,0.7);
   font-weight: 600;
@@ -467,7 +595,7 @@ a {
 }
 
 
-/* RESPONSIVE */
+/*phn e responsive*/
 
 @media (max-width: 700px) {
 
